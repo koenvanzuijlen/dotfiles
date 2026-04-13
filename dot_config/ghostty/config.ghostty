@@ -1,0 +1,11 @@
+working-directory = ~
+window-inherit-working-directory = false
+
+keybind = ctrl+shift+up=new_split:up
+keybind = ctrl+shift+down=new_split:down
+keybind = ctrl+shift+left=new_split:left
+keybind = ctrl+shift+right=new_split:right
+keybind = ctrl+shift+0=equalize_splits
+
+font-family = "Fira Code Regular"
+theme = "dark:Catppuccin Frappe,light:Catppuccin Latte"
