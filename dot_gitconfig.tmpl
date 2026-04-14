@@ -1,0 +1,40 @@
+[user]
+name = Koen van Zuijlen
+email = {{ .email | quote }}
+
+[core]
+editor = nano
+pager = delta
+
+[color]
+ui = auto
+
+[fetch]
+prune = true
+
+[pull]
+ff = true
+
+[diff]
+tool = vscode
+[difftool "vscode"]
+cmd = code --wait --diff $LOCAL $REMOTE
+
+[merge]
+tool = vscode
+[mergetool]
+keepBackup = false
+[mergetool "vscode"]
+cmd = code --wait $MERGED
+[core]
+
+[interactive]
+diffFilter = delta --color-only
+
+[delta]
+features = side-by-side line-numbers decorations
+whitespace-error-style = 22 reverse
+[delta "decorations"]
+commit-decoration-style = bold yellow box ul
+file-style = bold yellow ul
+file-decoration-style = none

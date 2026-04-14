@@ -22,3 +22,6 @@ SAVEHIST=10000
 setopt SHARE_HISTORY
 
 alias src="exec zsh"
+
+# chezmoi
+export EDITOR="code --wait"
