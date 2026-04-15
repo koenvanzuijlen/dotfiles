@@ -8,7 +8,11 @@ fi
 autoload -Uz compinit && compinit
 
 # Init Antidote
+{{ if eq .chezmoi.os "linux" }}
 source /usr/share/zsh-antidote/antidote.zsh
+{{ else if eq .chezmoi.os "darwin" }}
+source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
+{{ end }}
 export ANTIDOTE_HOME=~/.cache/antidote
 antidote load
 
@@ -25,3 +29,8 @@ alias src="exec zsh"
 
 # chezmoi
 export EDITOR="code --wait"
+
+{{ if eq .chezmoi.os "darwin" }}
+# brew
+alias bupdate="brew update && brew upgrade && brew upgrade --cask && brew cleanup"
+{{ end }}
