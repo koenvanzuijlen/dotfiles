@@ -1,4 +1,8 @@
-working-directory = ~
+{{ if ne .isWorkMachine true }}
+working-directory = home
+{{ else }}
+working-directory = ~/git/supabase-integration-platform
+{{ end }}
 window-inherit-working-directory = false
 
 keybind = ctrl+shift+up=new_split:up
