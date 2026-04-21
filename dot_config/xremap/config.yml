@@ -1,0 +1,8 @@
+modmap:
+  - name: RuneLite only
+    application:
+      only: net-runelite-client-RuneLite
+    remap:
+      BTN_EXTRA: KEY_SPACE
+      BTN_SIDE: KEY_ESC
+      KEY_PLAYPAUSE: BTN_MIDDLE

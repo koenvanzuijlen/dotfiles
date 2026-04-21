@@ -1,4 +1,7 @@
 README.md
+{{- if (or (ne .chezmoi.os "linux") (ne .isWorkMachine false)) }}
+.config/xremap/
+{{ end }}
 {{- if ne .chezmoi.os "darwin" }}
 .Brewfile
 {{ end }}
