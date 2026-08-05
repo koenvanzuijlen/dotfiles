@@ -25,10 +25,13 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt SHARE_HISTORY
 
-alias src="exec zsh"
+alias src="source ~/.zshrc"
 
 # chezmoi
 export EDITOR="code --wait"
+
+# Go
+export PATH=$PATH:$HOME/go/bin
 
 {{ if eq .chezmoi.os "darwin" }}
 # brew
