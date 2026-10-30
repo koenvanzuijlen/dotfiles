@@ -19,6 +19,9 @@ antidote load
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Load machine-local secrets
+[[ -f ~/.config/zsh/secrets.zsh ]] && source ~/.config/zsh/secrets.zsh
+
 # History options
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -26,6 +29,7 @@ SAVEHIST=10000
 setopt SHARE_HISTORY
 
 alias src="source ~/.zshrc"
+alias ssh="ghostty +ssh --"
 
 # chezmoi
 export EDITOR="code --wait"
