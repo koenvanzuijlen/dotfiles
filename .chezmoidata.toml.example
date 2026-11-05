@@ -1,2 +1,3 @@
 email = "you@example.com"
 isWorkMachine = false
+homeAssistantMcpUrl = "https://homeassistant.com/api/webhook/mcp_"

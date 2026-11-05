@@ -1,8 +1,3 @@
----
-description: "Mandatory writing style for all human-readable natural language"
-applyTo: "**"
----
-
 # Writing Style Instructions
 
 These instructions are mandatory for **ALL natural-language text intended for human readers**.
