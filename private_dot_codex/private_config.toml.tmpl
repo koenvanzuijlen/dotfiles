@@ -1,5 +1,7 @@
+{{ if eq .isWorkMachine false -}}
 [mcp_servers.home-assistant]
 url = {{ .homeAssistantMcpUrl | quote }}
+{{ end }}
 
 [tui]
 screen_reader_detection_done = true
