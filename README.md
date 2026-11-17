@@ -8,3 +8,7 @@ Personal dotfiles, managed using [chezmoi](https://www.chezmoi.io/).
 1. Copy chezmoi data file from the example (`cp -i chezmoidata.toml.example chezmoidata.toml`).
 1. Set the correct values in `chezmoidata.toml`.
 1. Run `chezmoi apply` to set up the dotfiles for your machine.
+
+## Manual steps
+
+- **Claude Desktop:** the app has no file for global instructions. Paste the content of `.chezmoitemplates/writing-style.md` into *Settings → Profile → personal preferences*. This setting syncs with your account, so do it once.

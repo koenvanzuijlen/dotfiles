@@ -4,4 +4,8 @@ README.md
 {{ end }}
 {{- if ne .chezmoi.os "darwin" }}
 .Brewfile
+Library/
+{{ end }}
+{{- if ne .chezmoi.os "linux" }}
+.config/Claude/
 {{ end }}
